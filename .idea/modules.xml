@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Annontation/Annontation.iml" filepath="$PROJECT_DIR$/Annontation/Annontation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AppInitialzer.iml" filepath="$PROJECT_DIR$/AppInitialzer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Appinit_Api/Appinit_Api.iml" filepath="$PROJECT_DIR$/Appinit_Api/Appinit_Api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Appinit_Complier/Appinit_Complier.iml" filepath="$PROJECT_DIR$/Appinit_Complier/Appinit_Complier.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sample/Sample.iml" filepath="$PROJECT_DIR$/Sample/Sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample_module1/sample_module1.iml" filepath="$PROJECT_DIR$/sample_module1/sample_module1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sample_module2/sample_module2.iml" filepath="$PROJECT_DIR$/sample_module2/sample_module2.iml" />
+    </modules>
+  </component>
+</project>

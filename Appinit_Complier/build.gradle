@@ -1,0 +1,35 @@
+apply plugin: 'java-library'
+apply plugin: 'com.novoda.bintray-release'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.google.auto.service:auto-service:1.0-rc3'
+    implementation 'com.squareup:javapoet:1.8.0'
+    implementation 'org.apache.commons:commons-lang3:3.4'
+    implementation 'org.apache.commons:commons-collections4:4.1'
+    implementation "com.tsubasa.app_initializer:annontation:$rootProject.ext.apiVersion"
+}
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url 'https://dl.bintray.com/tsubasap91/maven' }
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven { url 'https://dl.bintray.com/tsubasap91/maven' }
+}
+
+publish {
+    userOrg = 'tsubasap91'      //bintray注册的用户名
+    groupId = 'com.tsubasa.app_initializer'         //compile引用时的第1部分groupId
+    artifactId = 'compiler'     //compile引用时的第2部分项目名
+    publishVersion = "$rootProject.ext.complierVersion"    //compile引用时的第3部分版本号
+    desc = 'annotation processer'
+    website = 'https://github.com/Panjianan/BaseCore'
+}

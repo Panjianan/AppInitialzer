@@ -1,0 +1,14 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tsubasa.appinit.api">
+
+    <application>
+
+        <provider
+            android:name=".ProcessCoreInitializer"
+            android:authorities="${applicationId}.core-trojan"
+            android:exported="false"
+            android:multiprocess="true" />
+
+    </application>
+
+</manifest>

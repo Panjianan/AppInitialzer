@@ -1,0 +1,18 @@
+apply plugin: 'java-library'
+apply plugin: 'com.novoda.bintray-release'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
+
+publish {
+    userOrg = 'tsubasap91'      //bintray注册的用户名
+    groupId = 'com.tsubasa.app_initializer'         //compile引用时的第1部分groupId
+    artifactId = 'annontation'     //compile引用时的第2部分项目名
+    publishVersion = "$rootProject.ext.complierVersion"    //compile引用时的第3部分版本号
+    desc = 'annotation processer'
+    website = 'https://github.com/Panjianan/BaseCore'
+}
