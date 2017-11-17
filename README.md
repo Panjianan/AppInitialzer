@@ -5,6 +5,7 @@ annonation: [ ![Download](https://api.bintray.com/packages/tsubasap91/maven/anno
 core: [ ![Download](https://api.bintray.com/packages/tsubasap91/maven/core/images/download.svg) ](https://bintray.com/tsubasap91/maven/core/_latestVersion)
 complier: [ ![Download](https://api.bintray.com/packages/tsubasap91/maven/compiler/images/download.svg) ](https://bintray.com/tsubasap91/maven/compiler/_latestVersion)
 
+特点：不用继承Application（demo中只是为了打印一下log）自动执行子模块中标记需要初始化的类
 
 用法：
 
@@ -54,3 +55,5 @@ class Initializer2 : IInitializer {
 ```
 
 ![image.png](http://upload-images.jianshu.io/upload_images/1712960-857e524cf2001cdd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+**ps:注意每个模块只能放置一个被@Initable标注的类**
